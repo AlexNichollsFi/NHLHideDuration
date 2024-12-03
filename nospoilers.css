@@ -1,0 +1,39 @@
+@import "sliders.css";
+
+:root {
+    --jet: #39393A;
+    --platinum: #E6E6E6;
+    --coral: #FF8552;
+    --myrtle: #297373;
+    --aquamarine: #85FFC7;
+  }
+
+body {
+    border-radius: 25px;
+    background-color: var(--jet);
+    color: var(--platinum);
+    border: #008df4;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 200px;
+}
+
+.title {
+    white-space: nowrap;
+    margin: 30px auto 40px auto;
+}
+
+.info {
+    margin: 15px auto 30px auto;
+    font-size: small;
+}

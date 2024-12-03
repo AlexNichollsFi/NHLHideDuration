@@ -1,0 +1,20 @@
+{
+    "name": "Hide NHL duration",
+    "description": "Hide the NHL.tv stream duration clock from screen",
+    "version": "1.0",
+    "manifest_version": 3,
+    "action": {
+      "default_popup": "nospoilers.html"
+    },
+    "permissions": [
+        "storage",
+        "scripting",
+        "activeTab",
+        "tabs"
+      ],
+    "content_scripts": [{
+        "js": ["nospoilers.js"],
+        "matches": ["https://nhltv.nhl.com/*"],
+        "run_at":  "document_idle"
+      }]
+  }

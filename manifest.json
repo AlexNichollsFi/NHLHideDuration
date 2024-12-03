@@ -4,7 +4,7 @@
     "version": "1.0",
     "manifest_version": 3,
     "action": {
-      "default_popup": "nospoilers.html"
+      "default_popup": "extension.html"
     },
     "permissions": [
         "storage",
@@ -13,7 +13,7 @@
         "tabs"
       ],
     "content_scripts": [{
-        "js": ["nospoilers.js"],
+        "js": ["js/manage-style-sheet.js"],
         "matches": ["https://nhltv.nhl.com/*"],
         "run_at":  "document_idle"
       }]

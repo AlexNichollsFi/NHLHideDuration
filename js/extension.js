@@ -28,7 +28,7 @@ function modifyStyleSheet(tabs) {
 
     chrome.scripting.executeScript({
         target: {tabId: currentTabId, allFrames: true},
-        files: ['nospoilers.js'],
+        files: ['js/manage-style-sheet.js'],
     });
 }
 
